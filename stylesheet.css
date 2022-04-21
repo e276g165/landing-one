@@ -50,6 +50,17 @@ h2 {
     font-size: 2rem;
 }
 
+.social-media-wrapper {
+    position: absolute;
+    top: 50vh;
+    padding-left: 1vw;
+}
+
+.social-media-icons {
+    display: block;
+    font-size: 2.25em;
+}
+
 .grid {
     display: grid;
                     /*min - prefered - max*/
