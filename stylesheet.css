@@ -30,6 +30,11 @@ li {
 a {
     color: white;
     text-decoration: none;
+    transition: .4s;
+}
+
+a:hover {
+    color: rgb(255, 200, 0);
 }
 
 .header-text {
@@ -69,8 +74,23 @@ article {
     color: white;
 }
 
-.article-wrapper h2 {
+.article-wrapper h2, h3 {
     text-align: center;
+}
+
+.article-wrapper {
+    margin: 2em;
+}
+
+img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding: 2em;
+
+    opacity: 80%;
 }
 
 footer {
