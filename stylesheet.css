@@ -74,6 +74,11 @@ article {
     color: white;
 }
 
+.article-wrapper h2 {
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
 .article-wrapper h2, h3 {
     text-align: center;
 }
