@@ -79,7 +79,23 @@ article {
 }
 
 .article-wrapper {
-    margin: 2em;
+    /* margin: 2em; */
+    /* margin-top: 2em;
+    margin-bottom: 2em; */
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+hr {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    color: aliceblue;
 }
 
 img {
