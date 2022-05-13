@@ -47,7 +47,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2vh;
 }
 
@@ -72,6 +72,23 @@ article {
     margin-right: 10%;
 
     color: white;
+}
+
+.article-wrapper hr {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    color: aliceblue;
+}
+
+.article-wrapper h1 {
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .article-wrapper h2 {
@@ -122,6 +139,7 @@ img {
 footer {
     /* background-color: var(--navfooter-color); */
     padding: 1.25em;
+    margin-top: 15vh;
     text-align: center;
     color: white;
     font-size: .75rem;
