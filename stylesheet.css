@@ -22,6 +22,44 @@ body {
     font-size: 1.1rem;
 }
 
+.intro {
+    display: block;
+}
+
+.intro h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+.typing {
+    position: relative;
+    /* font-size: 2rem;
+    padding-top: 5vh;
+    padding-bottom: 15vh; */
+
+    font-style: italic;
+    /* text-decoration: underline; */
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    /* right: -5px; */
+    width: 1px;
+    height: 90%;
+    border-right: 2px solid white;
+    animation: blink 0.85s infinite ease;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 li {
     display: inline;
     margin-right: 3%;
