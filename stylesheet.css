@@ -16,11 +16,91 @@ body {
 
 .navbar {
     /* background-color: var(--navfooter-color); */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
     padding: 1.25em;
     margin-bottom: 10vh;
-    text-align: center;
-    font-size: 1.1rem;
+    color: white;
 }
+
+.brand-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover {
+    color: rgb(255, 200, 0);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px; 
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar { 
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* .header-text h1 {
+    animation: right-to-left 2s ease-in;
+}
+
+@keyframes right-to-left {
+    100% {
+        transform: translateX(-100%);
+    }
+} */
 
 .intro {
     display: block;
@@ -33,18 +113,12 @@ body {
 
 .typing {
     position: relative;
-    /* font-size: 2rem;
-    padding-top: 5vh;
-    padding-bottom: 15vh; */
-
     font-style: italic;
-    /* text-decoration: underline; */
 }
 
 .typing::after {
     content: "";
     position: absolute;
-    /* right: -5px; */
     width: 1px;
     height: 90%;
     border-right: 2px solid white;
@@ -60,23 +134,7 @@ body {
     }
 }
 
-li {
-    display: inline;
-    margin-right: 3%;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    transition: .4s;
-}
-
-a:hover {
-    color: rgb(255, 200, 0);
-}
-
 .header-text {
-    /* margin-left: 5vw; */
     text-align: center;
     font-size: 100%;
     margin-left: 10vw;
